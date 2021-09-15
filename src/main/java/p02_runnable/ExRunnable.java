@@ -1,5 +1,9 @@
 package p02_runnable;
 
+
+/**
+ * 使用实现 Runnable 接口创建线程
+ */
 public class ExRunnable {
 
     public static class MyThread implements Runnable {
@@ -13,7 +17,5 @@ public class ExRunnable {
         MyThread thread = new MyThread();
         Thread t = new Thread(thread);
         t.start();
-
     }
-
 }

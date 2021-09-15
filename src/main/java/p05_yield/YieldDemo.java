@@ -1,8 +1,10 @@
 package p05_yield;
 
 
+/**
+ * 当前线程从运行态，释放 cpu 资源重新抢占 ，本地静态方法 yield()
+ */
 public class YieldDemo {
-
 
     public static void main(String[] args) {
 
@@ -21,5 +23,4 @@ public class YieldDemo {
 
         System.out.println("main running");
     }
-
 }

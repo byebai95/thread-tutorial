@@ -1,5 +1,8 @@
 package p04_sleep;
 
+/**
+ * Thread 本地静态方法 sleep() ，当前线程进行休眠，不释放资源
+ */
 public class SleepDemo {
 
     public static class MyThread implements Runnable{

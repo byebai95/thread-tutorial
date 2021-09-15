@@ -6,7 +6,7 @@ public class ActiveCountDemo {
         System.out.println(Thread.activeCount());
 
         // main 线程
-        // Monitor Ctrl-Break  ,后台监控线程
+        // Monitor Ctrl-Break  ,后台监控线程(run 方式启动)
         Thread.currentThread().getThreadGroup().list();
     }
 }

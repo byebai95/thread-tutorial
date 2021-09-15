@@ -23,10 +23,5 @@ public class CallableDemo {
         t.start();
 
         System.out.println( task.get());
-
-
-
-
-
     }
 }

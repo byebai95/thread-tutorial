@@ -1,5 +1,9 @@
 package p03_exthread;
 
+
+/**
+ * 通过继承 Thread 创建线程
+ */
 public class ExThread {
 
     public static class MyThread extends Thread {
