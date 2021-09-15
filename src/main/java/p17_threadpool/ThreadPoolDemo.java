@@ -10,10 +10,13 @@ public class ThreadPoolDemo {
         @Override
         public void run() {
             for(int i=0;i<10000000;i++) {
+                final int temp = i;
+                System.out.println(Thread.currentThread().getName() + "-执行" + temp);
                 counter += 1;
             }
         }
     }
+
 
     public static void main(String[] args) throws InterruptedException{
 
@@ -25,8 +28,6 @@ public class ThreadPoolDemo {
                 new ArrayBlockingQueue<>(10));
         executor.execute(new MyThread());
 
-        TimeUnit.SECONDS.sleep(1);
-        System.out.println(counter);
     }
 
     /**

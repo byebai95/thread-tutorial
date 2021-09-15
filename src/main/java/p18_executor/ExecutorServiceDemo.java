@@ -18,7 +18,6 @@ public class ExecutorServiceDemo {
         ExecutorService singleThreadExecutor = Executors.newSingleThreadExecutor();
         singleThreadExecutor.submit(new MyThread());
 
-
         // 0 核心线程
         ExecutorService cachedThreadPool = Executors.newCachedThreadPool();
 
@@ -27,10 +26,6 @@ public class ExecutorServiceDemo {
 
         // 指定相等的核心线程与最大线程数量
         ExecutorService executorService = Executors.newFixedThreadPool(3);
-
-
-
-
 
     }
 }
